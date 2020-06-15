@@ -3,11 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="images/dlogo.png" rel="icon">
+    <script src="https://kit.fontawesome.com/ab68f9f347.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant&display=swap">
+    <link rel="stylesheet" href="css/simple-lightbox.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Dtoolz Laptop App</title>
 </head>
-<body>
+<body id="home">
+    <nav class="navigation-bar">
+       <div class="container"> 
+          <h1><a href="#home">Dtoolz Laptops</a></h1>
+          <ul class="navigations">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#home">Contact</a></li>
+          </ul>
+       </div>
+    </nav>
 
-    
+
+
+
+
     <!-- Made By Dtoolz -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/simple-lightbox.min.js"></script>
+    <script>
+        $(function(){//initializing the pictures gallery with simpleLightbox
+            const $pictures = $('.pictures a').simpleLightbox();
+        })
+    </script>
 </body>
 </html>
