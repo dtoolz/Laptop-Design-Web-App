@@ -4,7 +4,7 @@
     --first-color: #212121;
     --second-color: #7E57C2;
     --third-color: #B39DDB;
-    --my-overlay-color: rgba(0, 0, 0, 0.6);
+    --my-overlay-color: rgba(0, 0, 0, 0.5);
 }
 
 * {
@@ -49,6 +49,7 @@ img{
     padding: 0 2rem; /* zero for top and bootom, then 2rems padiing for left and right*/
 }
 
+/* navigations*/
 .navigation-bar {
     font-size: 1.2rem;
     padding-top: 0.3rem;
@@ -77,6 +78,7 @@ img{
     font-size: 1.5rem;
 }
 
+/* first section */
 .first-section {
    margin: 2rem 0;
 }
@@ -99,6 +101,43 @@ img{
     padding-bottom: 1rem;
 }
 
+/* second section*/
+.second-section {
+    position: relative; /* relative to overlay section*/
+    background: url('../images/m2.jpg') no-repeat bottom center/cover;
+    height: 600px;
+}
+/* overlay-section added in reusables */
+
+.second-section-text {
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    max-width: 860px;
+    padding: 5.5rem 0;
+}
+
+.second-section-text h3{
+    font-size: 2rem;
+}
+
+.second-section-text h2{
+    font-size: 3.5rem;
+    padding: 2rem 0;
+}
+
+.second-section-text p{
+    font-size: 2rem;
+}
+
+
+
+
+
 /* reusables */
 .button {
     display: inline-block; /* prevents btn from taking it's own default styles and accepting custom styles*/
@@ -116,3 +155,11 @@ img{
     background: var(--second-color);
 }
 
+.overlay-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--my-overlay-color);
+}
