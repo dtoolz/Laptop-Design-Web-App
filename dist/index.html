@@ -6,7 +6,7 @@
     <link href="images/dlogo.png" rel="icon">
     <script src="https://kit.fontawesome.com/ab68f9f347.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant&display=swap">
-    <link rel="stylesheet" href="css/simple-lightbox.min.css">
+    <link rel="stylesheet" href="css/simple-lightbox.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Dtoolz Laptop App</title>
 </head>
@@ -52,17 +52,41 @@
        </div>
     </section>
 
+    <!-- my pictures/phot gallery-->
+    <section class="third-section">
+        <div class="dtoolz-gallery">
+            <a href="./images/m3.jpg" class="big"> <!-- class big part of simple light box-->
+               <img src="./images/m3.jpg" alt="photo gallery of laptops">
+            </a>
+            <a href="./images/m4.jpg" class="big">
+                <img src="./images/m4.jpg" alt="photo gallery of laptops">
+             </a>
+             <a href="./images/m5.jpg" class="big">
+                <img src="./images/m5.jpg" alt="photo gallery of laptops">
+             </a>
+             <a href="./images/m6.jpg" class="big">
+                <img src="./images/m6.jpg" alt="photo gallery of laptops">
+             </a>
+             <a href="./images/m7.jpg" class="big">
+                <img src="./images/m7.jpg" alt="photo gallery of laptops">
+             </a>
+             <a href="./images/m8.jpg" class="big">
+                <img src="./images/m8.jpg" alt="photo gallery of laptops">
+             </a>
+        </div>
+    </section>
+
 
 
 
 
     <!-- Made By Dtoolz -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/simple-lightbox.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/simple-lightbox.js"></script>
     <script>
         $(function(){//initializing the pictures gallery with simpleLightbox
-            const $pictures = $('.pictures a').simpleLightbox();
-        })
+            var $gallery = new SimpleLightbox('.dtoolz-gallery a', {});
+        });
     </script>
 </body>
 </html>
